@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "titre": "Dressing Collectif",
+        "description": "Plateforme e-commerce C2C dédiée à la mode de seconde main, inspirée de Vestiaire Collective. Ce projet Full-Stack met l'accent sur une architecture MVC sans framework, intégrant un système de filtrage complexe sans JavaScript, un espace d'administration sécurisé et une messagerie instantanée entre utilisateurs.",
+        "competences": ["PHP Natif", "MySQL", "Architecture MVC", "HTML5/CSS3", "GitHub"],
+        "images": [
+            "assets/images/projets/Dressing Collectif/Dressing Collectif.jpg",
+            "assets/images/projets/Dressing Collectif/Capture d'écran 2025-10-10 212049.png"
+        ],
+        "type_hebergement": "local",
+        "explication_hebergement": "Déployé en environnement local (WAMP/XAMPP). Code source structuré et versionné disponible pour consultation.",
+        "lien_github": "",
+        "lien_demo": "",
+        "statut": "en_development",
+        "date": "2025"
+    },
+    {
+        "id": 2,
+        "titre": "Invader - Logistique & Stock",
+        "description": "Application web de gestion de stocks et d'inventaire intitulée 'Une logistique à portée de clic'. Conçue pour optimiser les flux logistiques, elle permet le suivi des entrées/sorties de produits et la visualisation de l'état des stocks en temps réel via une interface épurée.",
+        "competences": ["Gestion de Base de Données", "Interface Web", "Logistique", "UX Design"],
+        "images": [
+            "assets/images/projets/Invader/INVADER (3)_page-0001.jpg"
+        ],
+        "type_hebergement": "github",
+        "explication_hebergement": "Code source disponible sur GitHub. Projet mettant l'accent sur l'ergonomie et la fiabilité des données.",
+        "lien_github": "https://github.com/votre-profil/nom-du-projet",
+        "lien_demo": "",
+        "statut": "partiellement_fonctionnel",
+        "date": "2025"
+    },
+    {
+        "id": 3,
+        "titre": "Gestionnaire de Tâches JavaFX",
+        "description": "Logiciel de bureau performant pour la gestion de projets collaborative. L'application intègre un tableau Kanban interactif, un système d'authentification chiffré (BCrypt) et une protection contre les injections SQL. Architecture modulaire basée sur le pattern DAO pour une séparation stricte des données et de l'interface.",
+        "competences": ["Java", "JavaFX", "MySQL", "Sécurité (BCrypt)", "Design Patterns"],
+        "images": [
+            "assets/images/projets/Gestionnaire de Tâches Java/Gestionnaire de tâches.png"
+        ],
+        "type_hebergement": "local",
+        "explication_hebergement": "Application Desktop (Lourd). Architecture et code source disponibles pour démonstration technique.",
+        "lien_github": "",
+        "lien_demo": "",
+        "statut": "complet",
+        "date": "2025"
+    },
+    {
+        "id": 4,
+        "titre": "API REST Gestion de Bibliothèque",
+        "description": "Développement d'une API RESTful complète permettant l'interconnexion entre une base de données de bibliothèque et différentes interfaces clients. Gestion centralisée du catalogue de livres, des emprunts utilisateurs et du système de réservation via des requêtes HTTP optimisées (JSON).",
+        "competences": ["PHP", "Architecture REST", "MySQL", "Gestion API", "JSON"],
+        "images": [
+            "assets/images/projets/API gestion de bili/API gestion de bili.png"
+        ],
+        "type_hebergement": "local",
+        "explication_hebergement": "Projet backend pur. Documentation des endpoints et architecture disponibles sur demande.",
+        "lien_github": "",
+        "lien_demo": "",
+        "statut": "complet",
+        "date": "2025"
+    }
+]

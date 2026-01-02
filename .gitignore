@@ -1,0 +1,23 @@
+# Fichiers de configuration sensibles
+includes/config.php
+
+# Fichiers temporaires
+*.tmp
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers personnels (à ne pas versionner)
+assets/images/photo-profil.jpg
+assets/documents/cv.pdf
+assets/images/projets/*.jpg
+assets/images/projets/*.png
+

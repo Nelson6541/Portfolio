@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "type": "academique",
+        "titre": "Bachelor en Informatique",
+        "institution": "ECE : École Centrale d’Électrotechnique",
+        "date_debut": "2024",
+        "date_fin": "2027",
+        "lieu": "Paris, France",
+        "details": [
+            "Spécialisation en développement web et mobile",
+            "Mémoire sur l'optimisation des performances frontend"
+        ],
+        "competences": ["JavaScript", "React", "Node.js","PHP","MySQL","HTML","CSS","Git","C"]
+    },
+    {
+        "id": 2,
+        "type": "academique",
+        "titre": "Classe Préparatoire aux Grandes Écoles",
+        "institution": "IUC : Institut Universitaire de la Côte",
+        "date_debut": "2023",
+        "date_fin": "2024",
+        "lieu": "Douala, Cameroun",
+        "details": [
+            "Préparation aux concours d'entrée aux grandes écoles",
+            "Méthodologie de travail et discipline"
+        ],
+        "competences": ["Mathématiques", "Physique", "Chimie", "Anglais", "Français", "Programmation","Python","C","Thermodynamique","Electronique","Algorithmique"]
+    }
+]
+

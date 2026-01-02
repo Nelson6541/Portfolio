@@ -1,0 +1,90 @@
+<?php
+/**
+ * EXEMPLE DE CONFIGURATION EMAIL AVANCÉE AVEC PHPMailer
+ * 
+ * Ce fichier est un exemple pour utiliser PHPMailer avec SMTP.
+ * Pour l'utiliser :
+ * 1. Installez PHPMailer via Composer : composer require phpmailer/phpmailer
+ * 2. Renommez ce fichier en send-email.php (ou modifiez contact.php pour l'utiliser)
+ * 3. Configurez vos paramètres SMTP
+ */
+
+/*
+require_once 'vendor/autoload.php';
+require_once 'includes/config.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: contact.php');
+    exit;
+}
+
+// Récupérer et nettoyer les données
+$nom = isset($_POST['nom']) ? trim($_POST['nom']) : '';
+$email = isset($_POST['email']) ? trim($_POST['email']) : '';
+$sujet = isset($_POST['sujet']) ? trim($_POST['sujet']) : '';
+$message = isset($_POST['message']) ? trim($_POST['message']) : '';
+
+// Validation
+$errors = [];
+
+if (empty($nom)) $errors[] = 'Le nom est requis.';
+if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'Email invalide.';
+if (empty($sujet)) $errors[] = 'Le sujet est requis.';
+if (empty($message)) $errors[] = 'Le message est requis.';
+
+if (!empty($errors)) {
+    $_SESSION['contact_error'] = implode(' ', $errors);
+    header('Location: contact.php');
+    exit;
+}
+
+// Configuration PHPMailer
+$mail = new PHPMailer(true);
+
+try {
+    // Configuration SMTP
+    $mail->isSMTP();
+    $mail->Host = SMTP_HOST;
+    $mail->SMTPAuth = true;
+    $mail->Username = SMTP_USER;
+    $mail->Password = SMTP_PASS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = SMTP_PORT;
+    $mail->CharSet = 'UTF-8';
+
+    // Expéditeur et destinataire
+    $mail->setFrom($email, $nom);
+    $mail->addAddress(EMAIL_CONTACT, NOM_COMPLET);
+    $mail->addReplyTo($email, $nom);
+
+    // Contenu
+    $mail->isHTML(true);
+    $mail->Subject = '[Portfolio] ' . $sujet;
+    $mail->Body = "
+        <h2>Nouveau message depuis le portfolio</h2>
+        <p><strong>Nom:</strong> " . htmlspecialchars($nom) . "</p>
+        <p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>
+        <p><strong>Sujet:</strong> " . htmlspecialchars($sujet) . "</p>
+        <hr>
+        <p><strong>Message:</strong></p>
+        <p>" . nl2br(htmlspecialchars($message)) . "</p>
+    ";
+
+    $mail->send();
+    $_SESSION['contact_success'] = 'Votre message a été envoyé avec succès. Je vous répondrai dans les plus brefs délais.';
+    
+} catch (Exception $e) {
+    $_SESSION['contact_error'] = 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer plus tard.';
+    // En développement, vous pouvez logger l'erreur :
+    // error_log("Erreur PHPMailer: " . $mail->ErrorInfo);
+}
+
+header('Location: contact.php');
+exit;
+*/
+
